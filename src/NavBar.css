@@ -1,0 +1,21 @@
+#navbar {
+	background: #333;
+	color: #FAFAFA;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-logo {
+	width: 118px;
+}
+
+.navbar-tabs > span {
+	margin: 0 10px;
+}
+
+.navbar-tabs > .active {
+	padding-bottom: 5px;
+	border-bottom: solid 2px #0aac8e;
+}
