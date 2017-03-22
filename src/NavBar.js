@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "./hexacta.png";
 import "./NavBar.css";
 
@@ -9,8 +10,8 @@ function NavBar() {
         <img src={logo} className="navbar-logo" alt="Hexacta" />
       </a>
       <nav className="navbar-tabs">
-        <span className="active">Experiments</span>
-        <span>Blog</span>
+        <Link to="/" className="active"><span>Experiments</span></Link>
+        <a href="https://medium.com/hexacta"><span>Blog</span></a>
       </nav>
     </div>
   );

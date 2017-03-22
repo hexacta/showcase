@@ -11,8 +11,10 @@
 	width: 118px;
 }
 
-.navbar-tabs > span {
+.navbar-tabs > a {
 	margin: 0 10px;
+	text-decoration: none;
+	color: inherit;
 }
 
 .navbar-tabs > .active {
