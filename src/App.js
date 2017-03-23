@@ -6,12 +6,15 @@ import Experiment from "./Experiment";
 import EXPERIMENTS from "./experiments";
 import "./App.css";
 
+const ShowcaseRoute = () => <Showcase experiments={EXPERIMENTS} />;
+
+const ExperimentRoute = ({ match }) => {
+  const exp = EXPERIMENTS.find(e => e.name === match.params.name);
+  return exp ? <Experiment info={exp} /> : <div>404</div>;
+};
+
 class App extends Component {
   render() {
-    const ShowcaseRoute = () => <Showcase experiments={EXPERIMENTS} />;
-    const ExperimentRoute = ({ match }) => (
-      <Experiment title={match.params.name} />
-    );
     return (
       <Router>
         <div className="App">
