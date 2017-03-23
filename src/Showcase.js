@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 
 class Showcase extends Component {
   render() {
-    return <div><Link to="/sanata">Sanata</Link></div>;
+    const Exp = ({ experiment }) => (
+      <li><Link to={"/" + experiment.name}>{experiment.title}</Link></li>
+    );
+    const experiments = this.props.experiments.map(exp => (
+      <Exp key={exp.name} experiment={exp} />
+    ));
+    return <ul>{experiments}</ul>;
   }
 }
 
