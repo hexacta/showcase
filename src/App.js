@@ -14,7 +14,7 @@ class App extends Component {
     );
     return (
       <Router>
-        <div>
+        <div className="App">
           <NavBar />
           <Route exact path="/" component={ShowcaseRoute} />
           <Route path="/:name" component={ExperimentRoute} />

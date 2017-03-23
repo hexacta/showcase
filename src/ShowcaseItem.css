@@ -1,0 +1,39 @@
+.showcase-item {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	flex: 1;
+	min-width: 200px;
+	max-width: 300px;
+	margin: 5px;
+	background: #FAFAFA;
+}
+
+.showcase-item img {
+	background: green;
+	width: 100%;
+}
+
+.rectangle:before {
+	content: "";
+	float: left;
+	padding-bottom: 162%;
+}
+
+.rectangle:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.square:before {
+	content: "";
+	float: left;
+	padding-bottom: 100%;
+}
+
+.square:after {
+	content: "";
+	display: table;
+	clear: both;
+}
