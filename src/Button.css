@@ -1,0 +1,17 @@
+.button {
+	display: block;
+	border: 1px solid #0aac8e;
+	padding: 10px 0;
+	margin: 4px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #0aac8e;
+}
+
+.button.filled {
+	color: transparent;
+	background: #0aac8e;
+}

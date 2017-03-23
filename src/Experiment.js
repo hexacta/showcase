@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "./Button";
 import "./Experiment.css";
 
 class Experiment extends Component {
@@ -15,10 +16,10 @@ class Experiment extends Component {
             <h1>{title}</h1>
             <p>{description}</p>
           </div>
-          <div>
-            <a href={launch}>Launch</a>
-            <a href={repo}>Get The Code</a>
-          </div>
+          <nav>
+            <Button href={launch}>Launch</Button>
+            <Button href={repo}>Get The Code</Button>
+          </nav>
         </header>
         <div className="experiment-video landscape">
           <iframe src={video} frameBorder="0" allowFullScreen />
