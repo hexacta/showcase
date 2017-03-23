@@ -6,9 +6,7 @@ const ShowcaseItem = ({ experiment }) => {
   return (
     <Link className="showcase-item rectangle" to={"/" + experiment.name}>
       <img className="square" src={experiment.img} alt={experiment.title} />
-      <span>
-        {experiment.title}
-      </span>
+      <h1> {experiment.title} </h1>
     </Link>
   );
 };
