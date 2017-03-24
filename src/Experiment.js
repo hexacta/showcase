@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Button";
+import ExperimentSection from "./ExperimentSection";
 import "./Experiment.css";
 
 class Experiment extends Component {
@@ -8,7 +9,17 @@ class Experiment extends Component {
   }
 
   render() {
-    const { title, description, video, launch, repo } = this.props.info;
+    const {
+      title,
+      description,
+      video,
+      launch,
+      repo,
+      sections
+    } = this.props.info;
+    const secs = sections.map((section, i) => (
+      <ExperimentSection key={i} {...section} />
+    ));
     return (
       <div className="experiment">
         <header>
@@ -24,6 +35,7 @@ class Experiment extends Component {
         <div className="experiment-video landscape">
           <iframe src={video} frameBorder="0" allowFullScreen />
         </div>
+        {secs}
       </div>
     );
   }

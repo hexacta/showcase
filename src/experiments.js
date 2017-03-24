@@ -7,7 +7,28 @@ const EXPERIMENTS = [
     launch: "http://sanata-test.hexacta.com",
     repo: "https://github.com/hexacta/sanata",
     description: "Web application showing auto generated tweets based on a Markov Chain model of a given Twitter user.",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    sections: [
+      {
+        title: "Markov Chain",
+        description: "Sanata generates a Markov Chain...",
+        img: base + "/img/sanata.png",
+        blog: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738"
+      },
+      {
+        title: "Twitter Integration",
+        description: `Twitter provides an API that can be used to get user's timeline, but with two limitations, first you can get at most 200 tweets per request, second there is a 1500 request rate limit.
+The following post explains how Sanata handle this:`,
+        img: base + "/img/sanata.png",
+        blog: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738"
+      },
+      {
+        title: "Continuous Delivery with Google Cloud",
+        description: `One of the goals of this project was to provide a way of deploying all the app modules as easy as a git push. This was achieved using Docker, Kubernetes and Google Container Engine as described in this post:`,
+        img: base + "/img/sanata.png",
+        blog: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738"
+      }
+    ]
   },
   {
     name: "planning-deck",
