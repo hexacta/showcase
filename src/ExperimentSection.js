@@ -1,12 +1,16 @@
 import React from "react";
-import "./ExperimentSection.css";
+import styled from "styled-components";
+
+const Section = styled.section`
+	border-top: 3px solid ${props => props.theme.accentColor};
+`;
 
 const ExperimentSection = ({ title, description, img, blog }) => {
   return (
-    <section className="experiment-section">
+    <Section>
       <h2>{title}</h2>
       <p>{description}</p>
-    </section>
+    </Section>
   );
 };
 

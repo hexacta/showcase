@@ -1,19 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import logo from "./hexacta.png";
-import "./NavBar.css";
+
+const Container = styled.div`
+	background: ${props => props.theme.darkPrimaryColor};
+	color: ${props => props.theme.lightPrimaryColor};
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+`;
+
+const Logo = styled.img`width: 118px;`;
+
+const StyledLink = styled(Link)`
+	margin: 0 10px;
+	text-decoration: none;
+	color: inherit;
+  &.active {
+    padding-bottom: 5px;
+    border-bottom: solid 2px ${props => props.theme.accentColor};
+  }
+`;
 
 function NavBar() {
   return (
-    <div id="navbar">
+    <Container>
       <a href="https://www.hexacta.com">
-        <img src={logo} className="navbar-logo" alt="Hexacta" />
+        <Logo src={logo} alt="Hexacta" />
       </a>
-      <nav className="navbar-tabs">
-        <Link to="/" className="active"><span>Experiments</span></Link>
-        <a href="https://medium.com/hexacta"><span>Blog</span></a>
+      <nav>
+        <StyledLink to="/" className="active">
+          <span>Experiments</span>
+        </StyledLink>
+        <StyledLink to="https://medium.com/hexacta">
+          <span>Blog</span>
+        </StyledLink>
       </nav>
-    </div>
+    </Container>
   );
 }
 

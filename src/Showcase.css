@@ -1,8 +1,0 @@
-.showcase {
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	padding: 0;
-	margin: 10px auto;
-	max-width: 1000px;
-}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
 import NavBar from "./NavBar";
 import Showcase from "./Showcase";
 import Experiment from "./Experiment";
@@ -17,11 +19,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <NavBar />
-          <Route exact path="/" component={ShowcaseRoute} />
-          <Route path="/:name" component={ExperimentRoute} />
-        </div>
+        <ThemeProvider theme={theme}>
+          <div>
+            <NavBar />
+            <Route exact path="/" component={ShowcaseRoute} />
+            <Route path="/:name" component={ExperimentRoute} />
+          </div>
+        </ThemeProvider>
       </Router>
     );
   }

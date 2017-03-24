@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import ExperimentSection from "./ExperimentSection";
-import "./Experiment.css";
 
 const Container = styled.div`
-	color: #FAFAFA;
+	color: ${props => props.theme.lightPrimaryColor};
 	height: 100%;
 	padding: 20px 0;
 	margin: 0 auto;
@@ -25,7 +24,7 @@ const Title = styled.h1`
 
 const P = styled.p`
 	margin: 0;
-	color: #aaa;
+	color: ${props => props.theme.lightSecondaryColor};
 	line-height: 1.3em;
 	padding: 12px;
 	font-size: 18px;
@@ -39,13 +38,31 @@ const Nav = styled.nav`
 	justify-content: center;
 `;
 
+const Video = styled.div`
+  display: none;
+	width: 100%;
+	position: relative;
+  & > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+`;
+
 class Experiment extends Component {
   componentDidMount() {
     document.title = "Hexacta - " + this.props.info.title;
   }
 
   render() {
-    const { title, description, launch, repo, sections } = this.props.info;
+    const {
+      title,
+      description,
+      launch,
+      repo,
+      sections,
+      video
+    } = this.props.info;
     const secs = sections.map((section, i) => (
       <ExperimentSection key={i} {...section} />
     ));
@@ -61,9 +78,9 @@ class Experiment extends Component {
             <Button href={repo}>Get The Code</Button>
           </Nav>
         </Header>
-        {/*<div className="experiment-video landscape">
+        <Video className="landscape">
           <iframe src={video} frameBorder="0" allowFullScreen />
-        </div>*/}
+        </Video>
         {secs}
       </Container>
     );
