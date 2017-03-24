@@ -17,7 +17,7 @@ class Experiment extends Component {
             <p>{description}</p>
           </div>
           <nav>
-            <Button href={launch}>Launch</Button>
+            <Button href={launch} filled>Launch</Button>
             <Button href={repo}>Get The Code</Button>
           </nav>
         </header>
