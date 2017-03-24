@@ -1,38 +1,3 @@
-.experiment {
-	color: #FAFAFA;
-	height: 100%;
-	padding: 20px 0;
-	margin: 0 auto;
-	max-width: 1000px;
-}
-
-.experiment header {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 20px;
-}
-
-.experiment h1 {
-	margin: 0;
-	padding: 12px;
-}
-
-.experiment p {
-	margin: 0;
-	color: #aaa;
-	line-height: 1.3em;
-	padding: 12px;
-	font-size: 18px;
-}
-
-.experiment nav {
-	min-width: 200px;
-	width: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
 .experiment-video {
 	width: 100%;
 	position: relative;
