@@ -8,7 +8,7 @@ const theme = {
   lightPrimaryColor: "#f1f3f5",
   lightSecondaryColor: "#bcbcbc",
   // Sizes
-  maxWidth: "1000px",
+  maxWidth: "1000px"
 };
 
 export default theme;
