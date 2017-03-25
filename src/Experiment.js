@@ -64,7 +64,7 @@ class Experiment extends Component {
       video
     } = this.props.info;
     const secs = sections.map((section, i) => (
-      <ExperimentSection key={i} {...section} />
+      <ExperimentSection key={i} {...section} odd={i % 2} />
     ));
     return (
       <Container>
