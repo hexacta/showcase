@@ -22,6 +22,12 @@ const StyledLink = styled(Link)`
     padding-bottom: 5px;
     border-bottom: solid 2px ${props => props.theme.accentColor};
   }
+
+  transition-duration: 0.2s;
+  transition-property: color;
+  &:hover {
+    color: ${props => props.theme.lightSecondaryColor};    
+  }
 `;
 
 function NavBar() {

@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const colors = props => {
+  return props.filled
+    ? `
+    color: ${props.theme.darkPrimaryColor};
+    background: ${props.theme.accentColor};`
+    : `
+    color: ${props.theme.accentColor};
+    background: transparent;`;
+};
+
 const Button = styled.a`
 	display: block;
 	border: 1px solid ${props => props.theme.accentColor};
@@ -9,9 +19,15 @@ const Button = styled.a`
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: ${props =>
-  props.filled ? props.theme.darkPrimaryColor : props.theme.accentColor};
-	background: ${props => props.filled ? props.theme.accentColor : "transparent"};
+  ${props => colors(props)}
+
+  transition-duration: 0.2s;
+  transition-property: transform;
+  will-change: transform;
+
+  &:hover {
+    transform: scale(1.02);    
+  }
 `;
 
 export default Button;
