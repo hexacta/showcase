@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Tag from "./Tag";
 
 const ContainerLink = styled(Link)`
 	text-decoration: none;
@@ -17,7 +18,11 @@ const ContainerLink = styled(Link)`
 
 const Img = styled.img`width: 100%`;
 
-const Ul = styled.ul`list-style: none`;
+const Ul = styled.ul`
+	list-style: none;
+	padding: 0 10px;
+	margin: 0;
+`;
 
 const Title = styled.h2`
 	font-size: 1.3em;
@@ -32,7 +37,7 @@ const ShowcaseItem = ({ experiment }) => {
       <Img className="square" src={experiment.img} alt={experiment.title} />
       <Title>{experiment.title}</Title>
       <Ul>
-        {experiment.tags.map(tag => <li key={tag}>{tag}</li>)}
+        {experiment.tags.map(tag => <Tag key={tag} name={tag} />)}
       </Ul>
     </ContainerLink>
   );
