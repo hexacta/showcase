@@ -6,7 +6,12 @@ import logo from "./hexacta.png";
 const Container = styled.div`
 	background: ${props => props.theme.darkPrimaryColor};
 	color: ${props => props.theme.lightPrimaryColor};
-	padding: 10px;
+`;
+
+const Content = styled.div`
+	padding: 15px;
+  max-width: ${({theme}) => theme.maxWidth};
+  margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -31,17 +36,19 @@ const StyledLink = styled(Link)`
 function NavBar() {
   return (
     <Container>
-      <a href="https://www.hexacta.com">
-        <Logo src={logo} alt="Hexacta" />
-      </a>
-      <nav>
-        <StyledLink to="/" className="active">
-          <span>Experiments</span>
-        </StyledLink>
-        <StyledLink to="https://medium.com/hexacta">
-          <span>Blog</span>
-        </StyledLink>
-      </nav>
+      <Content>
+        <a href="https://www.hexacta.com">
+          <Logo src={logo} alt="Hexacta" />
+        </a>
+        <nav>
+          <StyledLink to="/" className="active">
+            <span>Experiments</span>
+          </StyledLink>
+          <StyledLink to="https://medium.com/hexacta">
+            <span>Blog</span>
+          </StyledLink>
+        </nav>
+      </Content>
     </Container>
   );
 }
