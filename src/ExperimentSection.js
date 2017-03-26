@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Post from "./Post";
 
 const Section = styled.section`
 	border-top: 3px solid ${props => props.theme.accentColor};
@@ -17,6 +18,7 @@ const Img = styled.img`
 
 const Content = styled.div`
   padding: 10px 30px;
+  flex: 1;
 `;
 
 const ExperimentSection = ({ title, description, img, blog, odd }) => {
@@ -26,6 +28,7 @@ const ExperimentSection = ({ title, description, img, blog, odd }) => {
       <Content>
         <h2>{title}</h2>
         <P>{description}</P>
+        <Post {...blog}/>
       </Content>
     </Section>
   );

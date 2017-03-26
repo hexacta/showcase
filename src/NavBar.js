@@ -16,8 +16,6 @@ const Logo = styled.img`width: 118px;`;
 
 const StyledLink = styled(Link)`
 	margin: 0 10px;
-	text-decoration: none;
-	color: inherit;
   &.active {
     padding-bottom: 5px;
     border-bottom: solid 2px ${props => props.theme.accentColor};

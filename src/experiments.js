@@ -14,7 +14,12 @@ const EXPERIMENTS = [
         title: "Markov Chain",
         description: "Sanata generates a Markov Chain...",
         img: base + "/img/sanata.png",
-        blog: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738"
+        blog: {
+          title: "Markov Chaining",
+          url: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738",
+          author: "Rodrigo Pombo",
+          avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+        }
       },
       {
         title: "Twitter Integration",
