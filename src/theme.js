@@ -1,6 +1,7 @@
 const theme = {
   // Colors
   accentColor: "#0aac8e",
+  lightAccentColor: "#57F9DB",
   darkBackgroundColor: "#212121",
   darkPrimaryColor: "#212121",
   darkSecondaryColor: "#737373",

@@ -14,6 +14,10 @@ const ContainerLink = styled(Link)`
 	background: ${props => props.theme.lightBackgroundColor};
 	border-radius: 5px;
 	overflow: hidden;
+
+	&:hover h2 {
+		font-size: 1.5em;
+	}
 `;
 
 const Img = styled.img`width: 100%`;
@@ -29,6 +33,9 @@ const Title = styled.h2`
 	margin: 10px 8px;
 	color: ${props => props.theme.darkPrimaryColor};
 	text-align: center;
+
+  transition-duration: 0.2s;
+  transition-property: font-size;
 `;
 
 const ShowcaseItem = ({ experiment }) => {
