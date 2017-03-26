@@ -8,6 +8,7 @@ const EXPERIMENTS = [
     repo: "https://github.com/hexacta/sanata",
     description: "Web application showing auto generated tweets based on a Markov Chain model of a given Twitter user.",
     video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    tags: ["React", "Docker", "Google Cloud", "Twitter", "NLP", "Node"],
     sections: [
       {
         title: "Markov Chain",
@@ -35,13 +36,15 @@ The following post explains how Sanata handle this:`,
     title: "Planning Deck",
     img: base + "/img/planning-deck.png",
     launch: "https://planning-deck.firebaseapp.com",
-    repo: "https://github.com/hexacta/planning-deck"
+    repo: "https://github.com/hexacta/planning-deck",
+    tags: ["Polymer", "Mobile", "PWA", "Firebase"]
   },
   {
     name: "showcase",
     title: "Showcase",
     img: base + "/img/showcase.png",
-    repo: "https://github.com/hexacta/showcase"
+    repo: "https://github.com/hexacta/showcase",
+    tags: ["React", "Web"]
   }
 ];
 

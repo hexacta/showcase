@@ -17,6 +17,8 @@ const ContainerLink = styled(Link)`
 
 const Img = styled.img`width: 100%`;
 
+const Ul = styled.ul`list-style: none`;
+
 const Title = styled.h2`
 	font-size: 1.3em;
 	margin: 10px 8px;
@@ -29,6 +31,9 @@ const ShowcaseItem = ({ experiment }) => {
     <ContainerLink className="rectangle" to={"/" + experiment.name}>
       <Img className="square" src={experiment.img} alt={experiment.title} />
       <Title>{experiment.title}</Title>
+      <Ul>
+        {experiment.tags.map(tag => <li key={tag}>{tag}</li>)}
+      </Ul>
     </ContainerLink>
   );
 };
