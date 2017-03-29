@@ -3,7 +3,7 @@ const EXPERIMENTS = [
   {
     name: "sanata",
     title: "Sanata",
-    img: base + "/img/sanata.png",
+    img: base + "/img/sanata.gif",
     launch: "http://sanata-test.hexacta.com",
     repo: "https://github.com/hexacta/sanata",
     description: "Web application showing auto generated tweets based on a Markov Chain model of a given Twitter user.",
