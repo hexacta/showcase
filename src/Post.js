@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PostLogo, { GREEN_COLORS, GREY_COLORS } from "./PostLogo";
+import PostLogo, { GREEN_COLORS } from "./PostLogo";
 
 const ContainerLink = styled.a`
 	background: ${({ theme }) => theme.lightBackgroundColor};
