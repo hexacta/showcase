@@ -39,7 +39,7 @@ The following post explains how Sanata handle this:`,
   {
     name: "planning-deck",
     title: "Planning Deck",
-    img: base + "/img/planning-deck.png",
+    img: base + "/img/planning-deck.gif",
     launch: "https://planning-deck.firebaseapp.com",
     repo: "https://github.com/hexacta/planning-deck",
     tags: ["Polymer", "Mobile", "PWA", "Firebase"]
@@ -47,7 +47,7 @@ The following post explains how Sanata handle this:`,
   {
     name: "showcase",
     title: "Showcase",
-    img: base + "/img/showcase.png",
+    img: base + "/img/showcase.gif",
     repo: "https://github.com/hexacta/showcase",
     tags: ["React", "Web"]
   }
