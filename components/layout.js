@@ -30,6 +30,29 @@ export default ({ children, title }) => (
         html {
           background: #333;
         }
+
+        .square:before, .rectangle:before, .landscape:before {
+          content: "";
+          float: left;
+        }
+
+        .square:after, .rectangle:after, .landscape:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .square:before {
+          padding-bottom: 100%;
+        }
+
+        .rectangle:before {
+          padding-bottom: 130%;
+        }
+
+        .landscape:before {
+          padding-bottom: 56%;
+        }
 				`
       }
     </style>

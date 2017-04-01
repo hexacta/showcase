@@ -1,8 +1,8 @@
 import theme from "./style/theme";
 
 export default ({ experiment }) => (
-  <div className="container">
-    <img src={experiment.img} alt={experiment.title} />
+  <div className="container rectangle">
+    <img src={experiment.img} alt={experiment.title} className="square" />
     <h2>{experiment.title}</h2>
     <style jsx>
       {
@@ -19,6 +19,13 @@ export default ({ experiment }) => (
 
 				img {
 					width: 100%;
+				}
+
+				h2 {
+					font-size:1.3em;
+					margin: 10px 8px;
+					color: ${theme.darkPrimaryColor};
+					text-align: center;
 				}
         `
       }
