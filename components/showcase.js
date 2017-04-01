@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ShowcaseItem from "./showcase-item";
 import theme from "./style/theme";
+import ShowcaseItem from "./showcase-item";
 
 export default ({ experiments }) => (
   <div className="container">
