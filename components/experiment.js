@@ -8,5 +8,15 @@ export default ({ experiment }) => (
     {experiment.sections.map((sec, i) => (
       <ExperimentSection key={i} section={sec} odd={i % 2} />
     ))}
+    <style jsx>
+      {
+        `
+        .container {
+          margin: 0 auto;
+          max-width: ${theme.maxWidth};
+        }
+        `
+      }
+    </style>
   </div>
 );
