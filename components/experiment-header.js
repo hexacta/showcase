@@ -1,4 +1,5 @@
 import theme from "./style/theme";
+import Button from "./button";
 
 export default ({ experiment }) => (
   <header>
@@ -7,8 +8,8 @@ export default ({ experiment }) => (
       <p>{experiment.description}</p>
     </div>
     <nav>
-      <button>Launch</button>
-      <button>Get the Code</button>
+      <Button>Launch</Button>
+      <Button>Get the Code</Button>
     </nav>
     <style jsx>
       {
