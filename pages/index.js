@@ -4,7 +4,7 @@ import Showcase from "../components/showcase";
 import getExperiments from "../data/get-experiments";
 
 export default class extends React.Component {
-  static async getInitialProps({ req, query: { id } }) {
+  static async getInitialProps() {
     const experiments = await getExperiments();
     return { experiments };
   }
