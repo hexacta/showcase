@@ -17,7 +17,8 @@ export default ({ experiment }) => (
         header {
 					display: flex;
 					justify-content: space-between;
-					margin-bottom: 20px;
+          max-width: ${theme.maxWidth};
+          margin: 0 auto 20px;
         }
 
 				h1 {

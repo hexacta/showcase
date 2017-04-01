@@ -12,8 +12,6 @@ export default ({ experiment }) => (
       {
         `
         .container {
-          margin: 0 auto;
-          max-width: ${theme.maxWidth};
         }
         `
       }
