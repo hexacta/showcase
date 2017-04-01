@@ -2,15 +2,18 @@ export default async () => {
   return [
     {
       name: "sanata",
-      title: "Sanata"
+      title: "Sanata",
+      img: "static/sanata.png"
     },
     {
       name: "planning-deck",
-      title: "Planning Deck"
+      title: "Planning Deck",
+      img: "static/planning-deck.png"
     },
     {
       name: "showcase",
-      title: "Showcase"
+      title: "Showcase",
+      img: "static/showcase.png"
     }
   ];
 };

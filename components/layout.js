@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./header";
+import theme from "./style/theme";
 
 export default ({ children, title }) => (
   <div>
@@ -16,10 +17,19 @@ export default ({ children, title }) => (
     <style jsx global>
       {
         `
-				html, body {
+				* {
 					margin: 0;
 					padding: 0;
 				}
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        html {
+          background: #333;
+        }
 				`
       }
     </style>

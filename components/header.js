@@ -37,8 +37,6 @@ export default () => (
         }
 
         a {
-          text-decoration: none;
-          color: inherit;
           margin: 0 10px;
           transition-duration: 0.2s;
           transition-property: color;
