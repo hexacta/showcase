@@ -28,7 +28,7 @@ export default ({ children, title }) => (
         }
 
         html {
-          background: #333;
+          background: #eee;
         }
 
         .square:before, .rectangle:before, .landscape:before {
