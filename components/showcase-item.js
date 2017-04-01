@@ -11,7 +11,7 @@ export default ({ experiment }) => (
 					flex: 1;
 					min-width: 200px;
 					max-width: 300px;
-					margin: 7px;
+					margin: 16px;
 					background: ${theme.lightBackgroundColor};
 					border-radius: 5px;
 					overflow: hidden;
