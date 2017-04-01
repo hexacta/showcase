@@ -10,7 +10,7 @@ export default class extends React.Component {
   }
 
   render = () => (
-    <Layout>
+    <Layout title={this.props.experiment.title}>
       <Experiment experiment={this.props.experiment} />
     </Layout>
   );
