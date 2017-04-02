@@ -8,7 +8,7 @@ export default ({ experiment }) => (
       <p>{experiment.description}</p>
     </div>
     <nav>
-      <Button>Launch</Button>
+      <Button filled>Launch</Button>
       <Button>Get the Code</Button>
     </nav>
     <style jsx>

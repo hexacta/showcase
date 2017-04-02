@@ -15,7 +15,7 @@ export default ({ experiment }) => (
 					background: ${theme.lightBackgroundColor};
 					border-radius: 5px;
 					overflow: hidden;
-					transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+					transition: ${theme.shadowTransition};
 					box-shadow: ${theme.lowShadow};
         }				
 

@@ -12,10 +12,6 @@ export default ({ section, odd }) => (
     <style jsx>
       {
         `
-				section {
-					border-top: 3px solid ${theme.accentColor};
-				}
-
 				.wrapper {
           max-width: ${theme.maxWidth};
           margin: 0 auto;
