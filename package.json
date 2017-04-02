@@ -19,10 +19,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "start": "next start",
     "serve": "cd site && simple-server sarasa 5000",
     "format": "prettier --write src/**/*.js",
     "lint": "prettier-check src/**/*.js",
-    "start": "react-scripts start",
     "test:react": "react-scripts test --env=jsdom",
     "test": "run-s lint test:react",
     "build:react": "react-scripts build",

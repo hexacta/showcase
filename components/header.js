@@ -4,14 +4,12 @@ import theme from "./style/theme";
 export default () => (
   <header>
     <div className="content">
-      <Link href="https://www.hexacta.com">
-        <a>
-          <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
-        </a>
-      </Link>
+      <a href="https://www.hexacta.com">
+        <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
+      </a>
       <nav>
         <Link prefetch href="/"><a className="active">Experiments</a></Link>
-        <Link prefetch href="https://medium.com/hexacta"><a>Blog</a></Link>
+        <a href="https://medium.com/hexacta">Blog</a>
       </nav>
     </div>
 
