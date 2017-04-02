@@ -8,8 +8,8 @@ export default ({ experiment }) => (
       <p>{experiment.description}</p>
     </div>
     <nav>
-      <Button filled>Launch</Button>
-      <Button>Get the Code</Button>
+      <Button filled href={experiment.launch}>Launch</Button>
+      <Button href={experiment.repo}>Get the Code</Button>
     </nav>
     <style jsx>
       {

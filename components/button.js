@@ -1,7 +1,7 @@
 import theme from "./style/theme";
 
-export default ({ children, filled }) => (
-  <a className={filled && "filled"}>
+export default ({ children, filled, href }) => (
+  <a className={filled && "filled"} href={href}>
     {children}
     <style jsx>
       {
