@@ -1,4 +1,5 @@
 import theme from "./style/theme";
+import BlogPost from "./blog-post";
 
 export default ({ section, odd }) => (
   <section className={odd ? "odd" : "even"}>
@@ -7,6 +8,7 @@ export default ({ section, odd }) => (
       <div className="content">
         <h2>{section.title}</h2>
         <p>{section.description}</p>
+        <BlogPost {...section.blog} />
       </div>
     </div>
     <style jsx>

@@ -5,7 +5,7 @@ const theme = {
   darkBackgroundColor: "#212121",
   darkPrimaryColor: "#212121",
   darkSecondaryColor: "#737373",
-  lightBackgroundColor: "#f1f3f5",
+  lightBackgroundColor: "#fafafa",
   lightPrimaryColor: "#f1f3f5",
   lightSecondaryColor: "#bcbcbc",
   // Sizes

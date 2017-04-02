@@ -21,7 +21,7 @@ export default ({ children, filled, href }) => (
         }
 
         a.filled {
-          color: #fafafa;
+          color: ${theme.lightBackgroundColor};
           background: ${theme.accentColor};
         }
 

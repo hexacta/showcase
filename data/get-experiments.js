@@ -28,13 +28,23 @@ export default async () => {
           description: `Twitter provides an API that can be used to get user's timeline, but with two limitations, first you can get at most 200 tweets per request, second there is a 1500 request rate limit.
 The following post explains how Sanata handle this:`,
           img: base + "sanata.png",
-          blog: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738"
+          blog: {
+            title: "Get all tweets from one user using Twitter API",
+            url: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
         },
         {
           title: "Continuous Delivery with Google Cloud",
           description: `One of the goals of this project was to provide a way of deploying all the app modules as easy as a git push. This was achieved using Docker, Kubernetes and Google Container Engine as described in this post:`,
           img: base + "sanata.png",
-          blog: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738"
+          blog: {
+            title: "Continuous Delivery of NGINX, Node, and Mongo with Travis and Google Container Engine",
+            url: "https://medium.com/@pomber/continuous-delivery-of-nginx-node-and-mongo-with-travis-and-google-container-engine-e5d9e191d5ad",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
         }
       ]
     },
