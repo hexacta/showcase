@@ -31,7 +31,7 @@ export default ({ experiment }) => (
 					font-size:1.3em;
 					margin: 10px 8px;
 					color: ${theme.darkPrimaryColor};
-					text-align: center;
+					padding: 0 10px;
 				}
         `
       }

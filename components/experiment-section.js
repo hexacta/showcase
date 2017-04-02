@@ -31,7 +31,7 @@ export default ({ section, odd }) => (
 				}
 
 				h2 {
-					font-size: 24px;
+					font-size: 28px;
     			font-weight: 400;					
     			line-height: 32px;
 					padding-bottom: 16px;

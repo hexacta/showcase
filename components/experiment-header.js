@@ -23,6 +23,8 @@ export default ({ experiment }) => (
 
 				h1 {
 					padding: 12px;
+					font-size: 34px;
+    			font-weight: 600;		
 				}
 
 				p {
