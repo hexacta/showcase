@@ -44,7 +44,8 @@ export default ({ section, odd }) => (
 				}
 
 				p {
-					color: ${theme.darkSecondaryColor}
+					color: ${theme.darkSecondaryColor};
+					padding-bottom: 20px;
 				}
 				`
       }
