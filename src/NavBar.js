@@ -10,7 +10,7 @@ const Container = styled.div`
 
 const Content = styled.div`
 	padding: 15px;
-  max-width: ${({theme}) => theme.maxWidth};
+  max-width: ${({ theme }) => theme.maxWidth};
   margin: 0 auto;
 	display: flex;
 	justify-content: space-between;

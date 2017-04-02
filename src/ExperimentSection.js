@@ -28,7 +28,7 @@ const ExperimentSection = ({ title, description, img, blog, odd }) => {
       <Content>
         <h2>{title}</h2>
         <P>{description}</P>
-        <Post {...blog}/>
+        <Post {...blog} />
       </Content>
     </Section>
   );
