@@ -4,7 +4,7 @@ import BlogPost from "./blog-post";
 export default ({ section, odd }) => (
   <section className={odd ? "odd" : "even"}>
     <div className="wrapper">
-      <img src={section.img} alt={section.title} />
+      <img src={section.img} alt={section.title} className="preview ratio" />
       <div className="content">
         <h2>{section.title}</h2>
         <p>{section.description}</p>
@@ -20,6 +20,11 @@ export default ({ section, odd }) => (
 					padding: 30px;
 					display: flex;
 					flex-flow: row;
+				}
+
+				img {
+					width: 300px;
+					height: 300px;
 				}
 
 				.odd .wrapper {

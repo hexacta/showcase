@@ -6,21 +6,20 @@ export default async () => {
       name: "sanata",
       title: "Sanata",
       img: base + "sanata.png",
-      launch: "http://sanata-test.hexacta.com",
+      launch: "http://sanata.hexacta.com",
       repo: "https://github.com/hexacta/sanata",
       description: "Web application showing auto generated tweets based on a Markov Chain model of a given Twitter user.",
       video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["React", "Docker", "Google Cloud", "Twitter", "NLP", "Node"],
       sections: [
         {
-          title: "Markov Chain",
-          description: "Sanata generates a Markov Chain...",
+          title: "Markov Chains",
+          description: "Markov chains are a simple but powerful models. One of the things you can do with them is automatic text generation. The Markov chain algorithm that Sanata uses is now available as an NPM package.",
           img: base + "sanata.png",
-          blog: {
-            title: "Markov Chaining",
-            url: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738",
-            author: "Rodrigo Pombo",
-            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          repo: {
+            title: "hexacta/markov-chain",
+            url: "https://github.com/hexacta/markov-chain",
+            description: "Create, update and run Markov chain models for text generation:"
           }
         },
         {
@@ -30,7 +29,7 @@ The following post explains how Sanata handle this:`,
           img: base + "sanata.png",
           blog: {
             title: "Get all tweets from one user using Twitter API",
-            url: "https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738",
+            url: "https://medium.com/",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
           }
@@ -40,7 +39,18 @@ The following post explains how Sanata handle this:`,
           description: `One of the goals of this project was to provide a way of deploying all the app modules as easy as a git push. This was achieved using Docker, Kubernetes and Google Container Engine as described in this post:`,
           img: base + "sanata.png",
           blog: {
-            title: "Continuous Delivery of NGINX, Node, and Mongo with Travis and Google Container Engine",
+            title: "Continuous Delivery of NGINX and Node with Travis and Google Container Engine",
+            url: "https://medium.com/@pomber/continuous-delivery-of-nginx-node-and-mongo-with-travis-and-google-container-engine-e5d9e191d5ad",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
+        },
+        {
+          title: "Travis Conditional Deploys",
+          description: `We have two environments for Sanata, test and production. Test environment is always running the last code pushed to the master branch. Production is only updated when a new version is pushed using a git tag.`,
+          img: base + "sanata.png",
+          blog: {
+            title: "Deploy to different environments with Travis using git tags",
             url: "https://medium.com/@pomber/continuous-delivery-of-nginx-node-and-mongo-with-travis-and-google-container-engine-e5d9e191d5ad",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
@@ -53,10 +63,33 @@ The following post explains how Sanata handle this:`,
       title: "Planning Deck",
       description: "Progressive web app that looks and feels like a deck of planning poker cards.",
       img: base + "planning-deck.png",
-      launch: "https://planning-deck.firebaseapp.com",
+      launch: "https://planning-deck.hexacta.com",
       repo: "https://github.com/hexacta/planning-deck",
       tags: ["Polymer", "Mobile", "PWA", "Firebase"],
-      sections: []
+      sections: [
+        {
+          title: "Performant Dragging Animations",
+          description: "Animations should be rendered at 60fps, that makes dragging hard, because the animation depends on the real-time user interaction and you have less than 16ms to draw the new frame.",
+          img: base + "sanata.png",
+          blog: {
+            title: "Tips for dragging animations",
+            url: "https://medium.com/",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
+        },
+        {
+          title: "Rotating Elements",
+          description: "Making css rotations work as expected is not as easy as it sounds. Sometimes the best approach is try until you find what you want. You will find it faster if you have visual feedback:",
+          img: base + "sanata.png",
+          blog: {
+            title: "Tune your CSS transform origin and rotation visually",
+            url: "https://medium.com/",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
+        }
+      ]
     },
     {
       name: "showcase",
@@ -64,8 +97,32 @@ The following post explains how Sanata handle this:`,
       description: "React website, statically rendered, showcasing some experiments.",
       img: base + "showcase.png",
       repo: "https://github.com/hexacta/showcase",
+      launch: "https://showcase.hexacta.com",
       tags: ["React", "Web"],
-      sections: []
+      sections: [
+        {
+          title: "Static Rendering",
+          description: "This site is dynamic in the sense that depends on the list and details of experiments to show. But experiments don't change to often, so every time there are changes, we can rebuild it as a static site by re-rendering all the pages and components.",
+          img: base + "sanata.png",
+          blog: {
+            title: "React Static Rendering",
+            url: "https://medium.com/",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
+        },
+        {
+          title: "Grid Layout",
+          description: "Grid Layout is here, supported by all the major browsers.",
+          img: base + "sanata.png",
+          blog: {
+            title: "Showing a grid of cards is now much easier and flexible thanks to Grid Layout.",
+            url: "https://medium.com/",
+            author: "Rodrigo Pombo",
+            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
+        }
+      ]
     }
   ];
 };
