@@ -27,7 +27,7 @@ The following post explains how Sanata handle this:`,
         {
           title: "Markov Chains",
           description: "Markov chains are a simple but powerful models. One of the things you can do with them is automatic text generation. The Markov chain algorithm that Sanata uses is now available as an NPM package.",
-          img: base + "sanata.png",
+          img: base + "sanata/markov.png",
           repo: {
             title: "hexacta/markov-chain",
             url: "https://github.com/hexacta/markov-chain",
@@ -114,7 +114,7 @@ The following post explains how Sanata handle this:`,
         {
           title: "Grid Layout",
           description: "Grid Layout is here, supported by all the major browsers.",
-          img: base + "sanata.png",
+          img: base + "showcase/grid.png",
           blog: {
             title: "Showing a grid of cards is now much easier and flexible thanks to Grid Layout.",
             url: "https://medium.com/",
