@@ -33,12 +33,12 @@ export default ({ children, title }) => (
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         }
 
-        .square:before, .rectangle:before, .landscape:before {
+        .square:before, .rectangle:before, .landscape:before, .ratio:before {
           content: "";
           float: left;
         }
 
-        .square:after, .rectangle:after, .landscape:after {
+        .square:after, .rectangle:after, .landscape:after, .ratio:after {
           content: "";
           display: table;
           clear: both;
@@ -46,6 +46,10 @@ export default ({ children, title }) => (
 
         .square:before {
           padding-bottom: 100%;
+        }
+
+        .preview:before {
+          padding-bottom: 75%;
         }
 
         .rectangle:before {
