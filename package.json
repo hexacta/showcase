@@ -19,11 +19,8 @@
     "serve": "http-server site",
     "deploy": "firebase deploy",
     "start:next": "next build && next start",
-    "format": "prettier --write src/**/*.js",
-    "lint": "prettier-check src/**/*.js",
-    "test:react": "react-scripts test --env=jsdom",
-    "test": "run-s lint test:react",
-    "build:react": "react-scripts build",
-    "eject": "react-scripts eject"
+    "format": "prettier --write {data,pages,components}/**/*.js",
+    "lint": "prettier-check {data,pages,components}/**/*.js",
+    "test": "npm run lint"
   }
 }
