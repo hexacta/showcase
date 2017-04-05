@@ -1,17 +1,14 @@
 import theme from "./style/theme";
-import BlogLogo from "./blog-logo";
+import RepoLogo from "./repo-logo";
 
-export default ({ title, avatar, author, url }) => {
+export default ({ title, url, description }) => {
   if (!title) return null;
   return (
     <a href={url}>
-      <BlogLogo />
+      <RepoLogo />
       <div className="content">
         <h3>{title}</h3>
-        <div className="author">
-          <span className="author-name">by {author}</span>
-          <img src={avatar} alt={author} />
-        </div>
+        <p>{description}</p>
       </div>
       <style jsx>
         {
@@ -40,30 +37,17 @@ export default ({ title, avatar, author, url }) => {
 					h3 {
 						color: ${theme.darkPrimaryColor};
 						font-weight: 400;
-						font-size: 20px;
+						font-size: 22px;
 						line-height: 1.1;
 						padding-top: 5px;
 					}
 
-					img {
-						border-radius: 100%;
-						width: 36px;
-						height: 36px;
-						display: inline-block;
-					}
-
-					.author {
+					p {
+						font-size: 16px;						
+						color: ${theme.darkSecondaryColor};
 						display: flex;
-						justify-content: flex-end;
 						align-items: center;
 						padding-top: 5px;
-					}
-
-					.author-name {
-						color: ${theme.darkSecondaryColor};
-						vertical-align: middle;
-						padding: 2px 10px;
-						font-size: 14px;
 					}
 					`
         }

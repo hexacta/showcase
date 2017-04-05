@@ -13,16 +13,6 @@ export default async () => {
       tags: ["React", "Docker", "Google Cloud", "Twitter", "NLP", "Node"],
       sections: [
         {
-          title: "Markov Chains",
-          description: "Markov chains are a simple but powerful models. One of the things you can do with them is automatic text generation. The Markov chain algorithm that Sanata uses is now available as an NPM package.",
-          img: base + "sanata.png",
-          repo: {
-            title: "hexacta/markov-chain",
-            url: "https://github.com/hexacta/markov-chain",
-            description: "Create, update and run Markov chain models for text generation:"
-          }
-        },
-        {
           title: "Twitter Integration",
           description: `Twitter provides an API that can be used to get user's timeline, but with two limitations, first you can get at most 200 tweets per request, second there is a 1500 request rate limit.
 The following post explains how Sanata handle this:`,
@@ -32,6 +22,16 @@ The following post explains how Sanata handle this:`,
             url: "https://medium.com/",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+          }
+        },
+        {
+          title: "Markov Chains",
+          description: "Markov chains are a simple but powerful models. One of the things you can do with them is automatic text generation. The Markov chain algorithm that Sanata uses is now available as an NPM package.",
+          img: base + "sanata.png",
+          repo: {
+            title: "hexacta/markov-chain",
+            url: "https://github.com/hexacta/markov-chain",
+            description: "Create, update and run Markov chain models for text generation."
           }
         },
         {
