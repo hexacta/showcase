@@ -17,6 +17,7 @@
     "dev": "next",
     "build": "next export",
     "serve": "http-server site",
+    "predeploy": "npm run build",
     "deploy": "firebase deploy",
     "start:next": "next build && next start",
     "format": "prettier --write {data,pages,components}/**/*.js",
