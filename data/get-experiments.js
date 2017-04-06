@@ -1,4 +1,4 @@
-const base = "static/";
+const base = "/static/";
 
 export default async () => {
   return [
