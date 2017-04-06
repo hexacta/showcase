@@ -9,7 +9,8 @@ export default () => (
         <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
       </a>
       <Link prefetch href="/">
-        <Title />
+        <a> <Title /></a>
+
       </Link>
       <nav>
         <Link prefetch href="/"><a className="active">Experiments</a></Link>

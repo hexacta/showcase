@@ -15,14 +15,17 @@ export default () => (
           font-size: 24px;
           color: ${theme.darkSecondaryColor};
           letter-spacing: 1.1px;
-          transition: all 0.5s;
+          transition: all 1s;
           cursor: pointer;
 					position: relative;
 					z-index: 10;
+					text-shadow: 0 0 0;
         }
 
         h1:hover {
+        	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px ${theme.accentColor}, 0 0 35px ${theme.accentColor}, 0 0 40px ${theme.accentColor}, 0 0 50px ${theme.accentColor}, 0 0 75px ${theme.accentColor};
           animation: shadow 1s ease-in-out infinite alternate;
+					animation-delay: 0.5s;
           color: #fff;
         }
 
@@ -32,6 +35,7 @@ export default () => (
 					z-index: -5;
 					background: #111;
           transition: all 1s;
+					transition-delay: 1s;
 					width: 0;
 					height: 0;
 					overflow: hidden;
@@ -62,10 +66,10 @@ export default () => (
 
         @keyframes shadow {
           from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px ${theme.accentColor}, 0 0 70px ${theme.accentColor}, 0 0 80px ${theme.accentColor}, 0 0 100px ${theme.accentColor}, 0 0 150px ${theme.accentColor};
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px ${theme.accentColor}, 0 0 35px ${theme.accentColor}, 0 0 40px ${theme.accentColor}, 0 0 50px ${theme.accentColor}, 0 0 75px ${theme.accentColor};
           }
           to {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px ${theme.accentColor}, 0 0 35px ${theme.accentColor}, 0 0 40px ${theme.accentColor}, 0 0 50px ${theme.accentColor}, 0 0 75px ${theme.accentColor};
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px ${theme.accentColor}, 0 0 70px ${theme.accentColor}, 0 0 80px ${theme.accentColor}, 0 0 100px ${theme.accentColor}, 0 0 150px ${theme.accentColor};
           }
         }
 
