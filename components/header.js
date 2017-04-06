@@ -1,5 +1,6 @@
 import Link from "next/link";
 import theme from "./style/theme";
+import Title from "./header-title";
 
 export default () => (
   <header>
@@ -7,6 +8,9 @@ export default () => (
       <a href="https://www.hexacta.com">
         <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
       </a>
+      <Link prefetch href="/">
+        <Title />
+      </Link>
       <nav>
         <Link prefetch href="/"><a className="active">Experiments</a></Link>
         <a href="https://medium.com/hexacta">Blog</a>
