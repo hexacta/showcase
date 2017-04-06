@@ -5,7 +5,7 @@ import ShowcaseItem from "./showcase-item";
 export default ({ experiments }) => (
   <div className="container">
     {experiments.map(exp => (
-      <Link prefetch href={`/experiment?name=${exp.name}`} key={exp.name}>
+      <Link prefetch href={`/${exp.name}`} key={exp.name}>
         <a>
           <ShowcaseItem experiment={exp} />
         </a>

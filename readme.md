@@ -21,4 +21,4 @@ $ npm run deploy
 ```
 ## License
 
-MIT © [Hexacta](http://www.hexacta.com)
+MIT © [Hexacta](https://www.hexacta.com)
