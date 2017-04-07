@@ -34,6 +34,7 @@ export default ({ experiment }) => (
 					padding: 12px;
 					font-size: 18px;
 				}
+
 				nav {
 					min-width: 200px;
 					width: 300px;
@@ -41,6 +42,17 @@ export default ({ experiment }) => (
 					flex-direction: column;
 					justify-content: center;
 				}
+
+        @media (max-width: 600px) {
+          header {
+						flex-direction: column;
+          }
+
+					nav {
+						width: 100%;
+						padding: 0 10px;
+					}
+        }  
         `
       }
     </style>

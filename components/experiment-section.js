@@ -29,6 +29,12 @@ export default ({ section, odd }) => (
 					height: 300px;
 				}
 
+        @media (max-width: 720px) {
+          img {
+						display: none;
+          }
+        }  
+
 				.odd .wrapper {
 					flex-flow: row-reverse;
 				}

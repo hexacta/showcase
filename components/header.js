@@ -9,8 +9,7 @@ export default () => (
         <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
       </a>
       <Link prefetch href="/">
-        <a> <Title /></a>
-
+        <a className="title"> <Title /></a>
       </Link>
       <nav>
         <Link prefetch href="/"><a className="active">Experiments</a></Link>
@@ -53,6 +52,12 @@ export default () => (
         a:hover {
           color: ${theme.lightSecondaryColor};
         }
+
+        @media (max-width: 600px) {
+          .title {
+            display: none;
+          }
+        }        
 				`
       }
     </style>
