@@ -20,8 +20,8 @@ The following post explains how Sanata handle this:`,
           blog: {
             title: "Get all tweets from one user using Twitter API",
             url: "https://medium.com/",
-            author: "Rodrigo Pombo",
-            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+            author: "someone",
+            avatar: base + "unknown-avatar.png"
           }
         },
         {
@@ -40,7 +40,7 @@ The following post explains how Sanata handle this:`,
           img: base + "sanata/gcloud.png",
           blog: {
             title: "Continuous Delivery of NGINX and Node with Travis and Google Container Engine",
-            url: "https://medium.com/@pomber/continuous-delivery-of-nginx-node-and-mongo-with-travis-and-google-container-engine-e5d9e191d5ad",
+            url: "https://medium.com/",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
           }
@@ -51,7 +51,7 @@ The following post explains how Sanata handle this:`,
           img: base + "sanata/travis.png",
           blog: {
             title: "Deploy to different environments with Travis using git tags",
-            url: "https://medium.com/@pomber/continuous-delivery-of-nginx-node-and-mongo-with-travis-and-google-container-engine-e5d9e191d5ad",
+            url: "https://medium.com/",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
           }
@@ -84,7 +84,7 @@ The following post explains how Sanata handle this:`,
           img: base + "planning-deck/rotate.png",
           blog: {
             title: "Tune your CSS transform origin and rotation visually",
-            url: "https://medium.com/@pomber/tune-your-css-transform-origin-and-rotation-visually-b043a8b1a03e",
+            url: "https://medium.com/",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
           }
@@ -107,8 +107,8 @@ The following post explains how Sanata handle this:`,
           blog: {
             title: "React Static Rendering",
             url: "https://medium.com/",
-            author: "Rodrigo Pombo",
-            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+            author: "someone",
+            avatar: base + "unknown-avatar.png"
           }
         },
         {
@@ -118,8 +118,8 @@ The following post explains how Sanata handle this:`,
           blog: {
             title: "Showing a grid of cards is now much easier and flexible thanks to Grid Layout.",
             url: "https://medium.com/",
-            author: "Rodrigo Pombo",
-            avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
+            author: "someone",
+            avatar: base + "unknown-avatar.png"
           }
         }
       ]
