@@ -30,6 +30,8 @@ export default ({ experiment }) => (
 
 				img {
 					width: 100%;
+					min-height: 225px;
+					background: grey;
 				}
 
 				h2 {
