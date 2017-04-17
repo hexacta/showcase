@@ -5,7 +5,7 @@ import Title from "./header-title";
 export default () => (
   <header>
     <div className="content">
-      <a href="https://www.hexacta.com">
+      <a href="https://www.hexacta.com/?hil">
         <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
       </a>
       <Link prefetch href="/">
