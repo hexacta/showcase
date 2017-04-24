@@ -39,8 +39,8 @@ The following post explains how Sanata handle this:`,
           description: `One of the goals of this project was to provide a way of deploying all the app modules as easy as a git push. This was achieved using Docker, Kubernetes and Google Container Engine as described in this post:`,
           img: base + "sanata/gcloud.png",
           blog: {
-            title: "Continuous Delivery of NGINX and Node with Travis and Google Container Engine",
-            url: "https://medium.com/",
+            title: "Automatic deployment of multiple Docker containers to Google Container Engine using Travis",
+            url: "https://medium.com/hexacta-engineering/automatic-deployment-of-multiple-docker-containers-to-google-container-engine-using-travis-e5d9e191d5ad",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
           }
@@ -84,7 +84,7 @@ The following post explains how Sanata handle this:`,
           img: base + "planning-deck/rotate.png",
           blog: {
             title: "Tune your CSS transform origin and rotation visually",
-            url: "https://medium.com/",
+            url: "https://medium.com/hexacta-engineering/tune-your-css-transform-origin-and-rotation-visually-b043a8b1a03e",
             author: "Rodrigo Pombo",
             avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
           }

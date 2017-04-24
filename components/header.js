@@ -5,7 +5,7 @@ import Title from "./header-title";
 export default () => (
   <header>
     <div className="content">
-      <a href="https://www.hexacta.com/?hil">
+      <a href="http://www.hexacta.com/?hil">
         <img className="logo" src="/static/hexacta.png" alt="Hexacta" />
       </a>
       <Link prefetch href="/">
@@ -13,7 +13,7 @@ export default () => (
       </Link>
       <nav>
         <Link prefetch href="/"><a className="active">Experiments</a></Link>
-        <a href="https://medium.com/hexacta">Blog</a>
+        <a href="https://medium.com/hexacta-engineering">Blog</a>
       </nav>
     </div>
 
