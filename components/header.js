@@ -13,7 +13,7 @@ export default () => (
       </Link>
       <nav>
         <Link prefetch href="/"><a className="active">Experiments</a></Link>
-        <a href="https://medium.com/hexacta-engineering">Blog</a>
+        <a href="https://engineering.hexacta.com/">Blog</a>
       </nav>
     </div>
 
