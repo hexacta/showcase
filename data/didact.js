@@ -62,6 +62,6 @@ export default {
         author: "Rodrigo Pombo",
         avatar: "https://cdn-images-1.medium.com/fit/c/32/32/1*lJ3fWONmPl2rX1QMolsanA.jpeg"
       }
-    },
+    }
   ]
 };
