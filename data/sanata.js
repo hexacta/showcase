@@ -9,18 +9,18 @@ export default {
   video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   tags: ["React", "Docker", "Google Cloud", "Twitter", "NLP", "Node"],
   sections: [
-    {
-      title: "Twitter Integration",
-      description: `Twitter provides an API that can be used to get user's timeline, but with two limitations, first you can get at most 200 tweets per request, second there is a 1500 request rate limit.
-The following post explains how Sanata handle this:`,
-      img: base + "sanata/twitter.png",
-      blog: {
-        title: "Get all tweets from one user using Twitter API",
-        url: "https://medium.com/",
-        author: "someone",
-        avatar: base + "unknown-avatar.png"
-      }
-    },
+    //     {
+    //       title: "Twitter Integration",
+    //       description: `Twitter provides an API that can be used to get user's timeline, but with two limitations, first you can get at most 200 tweets per request, second there is a 1500 request rate limit.
+    // The following post explains how Sanata handle this:`,
+    //       img: base + "sanata/twitter.png",
+    //       blog: {
+    //         title: "Get all tweets from one user using Twitter API",
+    //         url: "https://medium.com/",
+    //         author: "someone",
+    //         avatar: base + "unknown-avatar.png"
+    //       }
+    //     },
     {
       title: "Markov Chains",
       description: "Markov chains are a simple but powerful models. One of the things you can do with them is automatic text generation. The Markov chain algorithm that Sanata uses is now available as an NPM package.",

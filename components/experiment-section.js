@@ -1,6 +1,7 @@
 import theme from "./style/theme";
 import BlogPost from "./blog-post";
 import Repo from "./repo";
+import SectionLink from "./section-link";
 
 export default ({ section, odd }) => (
   <section className={odd ? "odd" : "even"}>
@@ -11,6 +12,7 @@ export default ({ section, odd }) => (
         <p>{section.description}</p>
         <BlogPost {...section.blog} />
         <Repo {...section.repo} />
+        <SectionLink {...section.link} />
       </div>
     </div>
     <style jsx>
