@@ -2,18 +2,17 @@ import Link from "next/link";
 import theme from "./style/theme";
 import ShowcaseItem from "./showcase-item";
 
-export default ({ experiments }) => (
+export default ({ experiments }) =>
   <div className="container">
-    {experiments.map(exp => (
+    {experiments.map(exp =>
       <Link prefetch href={`/${exp.name}`} key={exp.name}>
         <a>
           <ShowcaseItem experiment={exp} />
         </a>
       </Link>
-    ))}
+    )}
     <style jsx>
-      {
-        `
+      {`
         .container {
           display: flex;
           justify-content: center;
@@ -21,8 +20,6 @@ export default ({ experiments }) => (
           margin: 10px auto;
           max-width: ${theme.maxWidth};
         }
-        `
-      }
+        `}
     </style>
-  </div>
-);
+  </div>;

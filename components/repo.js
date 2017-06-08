@@ -11,8 +11,7 @@ export default ({ title, url, description }) => {
         <p>{description}</p>
       </div>
       <style jsx>
-        {
-          `
+        {`
 					a {
 						background: ${theme.lightBackgroundColor};
 						padding: 10px;
@@ -49,8 +48,7 @@ export default ({ title, url, description }) => {
 						align-items: center;
 						padding-top: 5px;
 					}
-					`
-        }
+					`}
       </style>
     </a>
   );

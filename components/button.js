@@ -1,35 +1,30 @@
 import theme from "./style/theme";
 
-export default ({ children, filled, href }) => (
+export default ({ children, filled, href }) =>
   <a className={filled && "filled"} href={href}>
     {children}
-    <style jsx>
-      {
-        `
-        a {
-					display: block;
-					padding: 10px 0;
-					margin: 4px;
-					letter-spacing: 1px;
-					text-transform: uppercase;
-					text-align: center;
-					cursor: pointer;
-          color: ${theme.accentColor};
-          background: transparent;
-          box-shadow: ${theme.lowShadow};
-          transition: ${theme.shadowTransition};
-        }
-
-        a.filled {
-          color: ${theme.lightBackgroundColor};
-          background: ${theme.accentColor};
-        }
-
-        a:hover {
-          box-shadow: ${theme.highShadow};
-        }
-        `
+    <style jsx>{`
+      a {
+        display: block;
+        padding: 10px 0;
+        margin: 4px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        color: ${theme.accentColor};
+        background: transparent;
+        box-shadow: ${theme.lowShadow};
+        transition: ${theme.shadowTransition};
       }
-    </style>
-  </a>
-);
+
+      a.filled {
+        color: ${theme.lightBackgroundColor};
+        background: ${theme.accentColor};
+      }
+
+      a:hover {
+        box-shadow: ${theme.highShadow};
+      }
+    `}</style>
+  </a>;

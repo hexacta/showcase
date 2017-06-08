@@ -1,16 +1,16 @@
 import theme from "./style/theme";
 
-export default () => (
+export default () =>
   <h1>
     Innovation Labs
     <span>
       <h2>
-        We are hiring: VG86IHJwb21ib0BoZXhhY3RhLmNvbQ0KU3ViamVjdDogU2hvd2Nhc2UgRWFzdGVyIEVnZw==
+        We are hiring:
+        VG86IHJwb21ib0BoZXhhY3RhLmNvbQ0KU3ViamVjdDogU2hvd2Nhc2UgRWFzdGVyIEVnZw==
       </h2>
     </span>
     <style jsx>
-      {
-        `
+      {`
         h1 {
           font-size: 24px;
           color: ${theme.darkSecondaryColor};
@@ -82,8 +82,6 @@ export default () => (
             transform: translateX(-250vw);
           }
         }
-				`
-      }
+				`}
     </style>
-  </h1>
-);
+  </h1>;

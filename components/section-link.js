@@ -9,8 +9,7 @@ export default ({ title, url, img }) => {
         <h3>{title}</h3>
       </div>
       <style jsx>
-        {
-          `
+        {`
 					a {
 						background: ${theme.lightBackgroundColor};
 						padding: 10px;
@@ -47,8 +46,7 @@ export default ({ title, url, img }) => {
 						align-items: center;
 						padding-top: 5px;
 					}
-					`
-        }
+					`}
       </style>
     </a>
   );

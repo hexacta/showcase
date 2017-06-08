@@ -2,7 +2,7 @@ import Link from "next/link";
 import theme from "./style/theme";
 import Title from "./header-title";
 
-export default () => (
+export default () =>
   <header>
     <div className="content">
       <a href="http://www.hexacta.com/?hil">
@@ -18,8 +18,7 @@ export default () => (
     </div>
 
     <style jsx>
-      {
-        `
+      {`
 				header {
 	        background: ${theme.darkPrimaryColor};
 					color: ${theme.lightPrimaryColor};
@@ -58,8 +57,6 @@ export default () => (
             display: none;
           }
         }        
-				`
-      }
+				`}
     </style>
-  </header>
-);
+  </header>;
