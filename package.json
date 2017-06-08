@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "next": "^2.0.1",
-    "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "next": "beta",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "http-server": "^0.9.0",
     "npm-run-all": "^4.0.2",
-    "prettier": "^0.22.0",
+    "prettier": "^1.4.4",
     "prettier-check": "^1.0.0"
   },
   "scripts": {
     "dev": "next",
-    "build": "next export",
+    "build": "next build && next export",
     "preprod": "npm run build",
-    "prod": "http-server site",
+    "prod": "http-server out",
     "predeploy": "npm run build",
     "deploy": "firebase deploy",
     "start:next": "next build && next start",

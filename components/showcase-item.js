@@ -1,6 +1,6 @@
 import theme from "./style/theme";
 
-export default ({ experiment }) => (
+export default ({ experiment }) =>
   <div className="container rectangle">
     <img
       src={experiment.img}
@@ -10,8 +10,7 @@ export default ({ experiment }) => (
     <h2>{experiment.title}</h2>
     <p>{experiment.description}</p>
     <style jsx>
-      {
-        `
+      {`
         .container {
 					flex: 1;
 					min-width: 300px;
@@ -48,8 +47,6 @@ export default ({ experiment }) => (
 					margin: 10px 8px;
 					padding: 0 10px;
 				}
-        `
-      }
+        `}
     </style>
-  </div>
-);
+  </div>;

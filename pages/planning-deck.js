@@ -9,9 +9,8 @@ export default class extends React.Component {
     return { experiment };
   }
 
-  render = () => (
+  render = () =>
     <Layout title={this.props.experiment.title}>
       <Experiment experiment={this.props.experiment} />
-    </Layout>
-  );
+    </Layout>;
 }

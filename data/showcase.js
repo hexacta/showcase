@@ -2,7 +2,8 @@ const base = "/static/";
 export default {
   name: "showcase",
   title: "Showcase",
-  description: "React website, statically rendered, showcasing some experiments.",
+  description:
+    "React website, statically rendered, showcasing some experiments.",
   img: base + "showcase.png",
   repo: "https://github.com/hexacta/showcase",
   launch: "https://showcase.hexacta.com",

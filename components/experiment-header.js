@@ -1,7 +1,7 @@
 import theme from "./style/theme";
 import Button from "./button";
 
-export default ({ experiment }) => (
+export default ({ experiment }) =>
   <header>
     <div>
       <h1>{experiment.title}</h1>
@@ -12,8 +12,7 @@ export default ({ experiment }) => (
       <Button href={experiment.repo}>Get the Code</Button>
     </nav>
     <style jsx>
-      {
-        `
+      {`
         header {
 					display: flex;
 					justify-content: space-between;
@@ -53,8 +52,6 @@ export default ({ experiment }) => (
 						padding: 0 10px;
 					}
         }  
-        `
-      }
+        `}
     </style>
-  </header>
-);
+  </header>;

@@ -13,9 +13,7 @@ export default ({ title, avatar, author, url }) => {
           <img src={avatar} alt={author} />
         </div>
       </div>
-      <style jsx>
-        {
-          `
+      <style jsx>{`
 					a {
 						background: ${theme.lightBackgroundColor};
 						padding: 10px;
@@ -65,9 +63,7 @@ export default ({ title, avatar, author, url }) => {
 						padding: 2px 10px;
 						font-size: 14px;
 					}
-					`
-        }
-      </style>
+				`}</style>
     </a>
   );
 };

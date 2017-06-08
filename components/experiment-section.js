@@ -3,7 +3,7 @@ import BlogPost from "./blog-post";
 import Repo from "./repo";
 import SectionLink from "./section-link";
 
-export default ({ section, odd }) => (
+export default ({ section, odd }) =>
   <section className={odd ? "odd" : "even"}>
     <div className="wrapper">
       <img src={section.img} alt={section.title} className="preview ratio" />
@@ -16,8 +16,7 @@ export default ({ section, odd }) => (
       </div>
     </div>
     <style jsx>
-      {
-        `
+      {`
 				.wrapper {
           max-width: ${theme.maxWidth};
           margin: 0 auto;
@@ -62,8 +61,6 @@ export default ({ section, odd }) => (
 					color: ${theme.darkSecondaryColor};
 					padding-bottom: 20px;
 				}
-				`
-      }
+				`}
     </style>
-  </section>
-);
+  </section>;

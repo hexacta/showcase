@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "./header";
 import theme from "./style/theme";
 
-export default ({ children, title }) => (
+export default ({ children, title }) =>
   <div>
     <Head>
       <title>{`Hexacta - ${title}`}</title>
@@ -16,8 +16,7 @@ export default ({ children, title }) => (
     {children}
 
     <style jsx global>
-      {
-        `
+      {`
 				* {
 					margin: 0;
 					padding: 0;
@@ -60,8 +59,6 @@ export default ({ children, title }) => (
         .landscape:before {
           padding-bottom: 56%;
         }
-				`
-      }
+				`}
     </style>
-  </div>
-);
+  </div>;

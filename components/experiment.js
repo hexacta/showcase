@@ -2,19 +2,10 @@ import theme from "./style/theme";
 import ExperimentHeader from "./experiment-header";
 import ExperimentSection from "./experiment-section";
 
-export default ({ experiment }) => (
+export default ({ experiment }) =>
   <div className="container">
     <ExperimentHeader experiment={experiment} />
-    {experiment.sections.map((sec, i) => (
+    {experiment.sections.map((sec, i) =>
       <ExperimentSection key={i} section={sec} odd={i % 2} />
-    ))}
-    <style jsx>
-      {
-        `
-        .container {
-        }
-        `
-      }
-    </style>
-  </div>
-);
+    )}
+  </div>;
